@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JavaScript bersama Arkademi</title>
+</head>
+
+<body>
+    <p id="root"></p>
+    <script>
+        const nama = 'Nia';
+        let alamat = 'Medan';
+        alamat = 'Lampung';
+        let nilaiSiswa;
+
+        console.log('Alamat: ', alamat);
+        // alert('Alamat: ' + alamat);
+        document.getElementById('root').innerHTML = 'Alamat: ' + alamat;
+
+        const hargaBarang1 = '500';
+        const hargaBarang2 = 1500;
+        const totalBayar = hargaBarang1 + hargaBarang2;
+        console.log('Total Bayar: ', totalBayar);
+
+        const buah = 'Apel';
+        // buah.map((b) => console.log(b))
+
+        const hargaTas1 = 2663100;
+        const hargaTas2 = 2588847;
+        const diskon = 258353;
+        const bayar = (hargaTas1 + hargaTas2);
+        console.log('Yang harus dibayar: ', bayar);
+
+        const currentPassword = '123456';
+        const existPassword = '123456a';
+        console.log('Apakah password sama? ', currentPassword == existPassword);
+
+        const value1 = '23';
+        const value2 = '23';
+        // console.log('Apakah nilai tersebut identical? ', value1 === value2);
+        // console.log('Apakah nilai tersebut tidak sama? ', value1 != value2);
+        console.log('Apakah nilai tersebut tidak identical? ', value1 !== value2);
+
+        const noHp = '089522226666';
+        console.log(noHp.slice(1, 12));
+        console.log(noHp.replace('0', '+62'));
+
+        const age = 15;
+        if (age >= 17) {
+            console.log('Umur kamu sudah 17 tahun atau lebih dari 17 tahun.');
+        } else if (age == 15) {
+            console.log('Umur kamu adalah 15 tahun.');
+        } else {
+            console.log('Umur kamu kurang dari 17 tahun.');
+        }
+
+        const day = 6;
+        switch (day) {
+            case 1:
+                console.log('Hari ini hari Senin');
+                break;
+            case 2:
+                console.log('Hari ini hari Selasa');
+                break;
+            case 3:
+                console.log('Hari ini hari Rabu');
+                break;
+            default:
+                break;
+        }
+
+        for (let i = 1; i <= 5; i++) {
+            console.log('Number: ', i);
+        }
+
+        const fruits = ['Apple', 'Banana', 'Papaya']
+        for (var i in fruits) {
+            console.log('Buah: ', fruits[i]);
+        }
+
+        function penjumlahan(x, y) {
+            let hasil = x + y;
+            return hasil;
+        }
+
+        console.log(penjumlahan(1200, 400));
+        console.log(penjumlahan(2365000, 1790000));
+
+    </script>
+</body>
+
+</html>

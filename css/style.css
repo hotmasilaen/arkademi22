@@ -1,0 +1,171 @@
+ .text-red {
+     color: red;
+ }
+
+ /* h1 {
+     color: #006cbb;
+ } */
+
+ .text-large {
+     font-size: 24px;
+ }
+
+ #btn {
+     background-color: #f9821f;
+     border: none;
+     color: white;
+     padding: 1rem 2rem;
+     font-size: larger;
+     font-weight: 600;
+     border-radius: 5px;
+ }
+
+ .container {
+     background-image: url('./desktop-wallpaper-dark-mountain-dark-mountains.jpg');
+     padding: 3rem;
+     color: white;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     height: 300px;
+     filter: blur(2px);
+ }
+
+ .card {
+     margin-top: 2rem;
+     margin-bottom: 2rem;
+     margin-left: 2rem;
+     border-width: 1px;
+     border-style: solid;
+     border-color: gray;
+     border-radius: 15px;
+     /* padding: 20px; */
+     padding-top: 20px;
+     padding-right: 20px;
+     padding-left: 20px;
+     padding-bottom: 20px;
+     width: 200px;
+     box-shadow: 3px 2px 1px grey;
+ }
+
+ .kotak {
+     width: 100px;
+     height: 100px;
+     background-color: #f9821f;
+     /* transition: width 2s, height 2s, background-color 2s;
+     transition-delay: 2s; */
+     /* animation: animasiKotak 2s ease 3 alternate forwards running; */
+     animation-duration: 2s;
+     animation-timing-function: ease;
+     animation-delay: 0s;
+     animation-iteration-count: 4;
+     animation-direction: alternate;
+     animation-fill-mode: forwards;
+     animation-play-state: running;
+     animation-name: animasiKotak;
+     animation-timeline: auto;
+     animation-range-start: normal;
+     animation-range-end: normal;
+
+ }
+
+ /* .kotak:hover {
+     width: 250px;
+     height: 250px;
+     background-color: #006cbb;
+ } */
+
+ .kotak2 {
+     width: 100px;
+     height: 100px;
+     background-color: #f9821f;
+     /* transition: width 2s, height 2s, background-color 2s;
+     transition-delay: 2s; */
+     /* animation: animasiKotak 2s ease 3 alternate forwards running; */
+     animation-duration: 2s;
+     animation-timing-function: ease;
+     animation-delay: 2s;
+     animation-iteration-count: 4;
+     animation-direction: alternate;
+     animation-fill-mode: forwards;
+     animation-play-state: running;
+     animation-name: animasiKotak;
+     animation-timeline: auto;
+     animation-range-start: normal;
+     animation-range-end: normal;
+
+ }
+
+ @keyframes animasiKotak {
+     from {
+         width: 100px;
+         height: 100px;
+         background-color: #f9821f;
+     }
+
+     to {
+         width: 250px;
+         height: 250px;
+         background-color: #006cbb;
+     }
+ }
+
+ .container-kotak {
+     display: flex;
+     gap: 2rem;
+ }
+
+ .container-1 {
+     display: flex;
+     align-items: center;
+     padding: 10rem 5rem;
+     background: linear-gradient(212.98deg, #fff 24.38%, #f6f7fb 91.2%);
+     gap: 2rem;
+ }
+
+ .container-btn {
+     display: flex;
+     align-items: center;
+     gap: 2rem;
+ }
+
+ .button-1 {
+     background-color: #f9821f;
+     border: none;
+     color: white;
+     padding: 1rem 2rem;
+     font-size: larger;
+     font-weight: 600;
+     border-radius: 5px;
+ }
+
+ .button-2 {
+     background-color: white;
+     border: none;
+     color: black;
+     padding: 1rem 2rem;
+     font-size: larger;
+     font-weight: 600;
+     border-radius: 5px;
+     border: 1px solid gray;
+ }
+
+ @media only screen and (max-width: 600px) {
+     .container-1 {
+         padding: 2rem;
+     }
+
+     .container-img {
+         display: none;
+     }
+
+     .container-btn {
+         flex-direction: column;
+         gap: 10px;
+     }
+
+     .button-2,
+     .button-1 {
+         width: 100%;
+     }
+ }

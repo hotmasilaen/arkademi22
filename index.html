@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateForm() {
+            let name = document.forms['myForm'][' fname '].value;
+            if (name == '') {
+                alert('Nama harus diisi, tidak boleh kosong!');
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<img>
+<!-- <h1>Tingkatkan Karier Profesionalmu</h1> -->
+<h1>Pelatihan yang Lengkap dan Relevan untuk Pekerja Indonesia</h1>
+<p>
+    Bermitra dengan lembaga pemerintah sebagai penyedia layanan pelatihan kartu prakerja untuk menciptakan angkatan
+    kerja Indonesia yang siap kerja.
+</p>
+<button>Tukar Voucher</button>
+<button>Cek Sertifikat</button>
+
+<a href="https://prakerja.arkademi.com/">Prakerja</a>
+<img src="https://prakerja.arkademi.com/static/media/hero.d05405f0.png" alt="Gambar Mentor" width="200" />
+<!-- Bermitra dengan lembaga pemerintah sebagai penyedia layanan pelatihan kartu prakerja untuk menciptakan angkatan
+    kerja Indonesia yang siap kerja.<br />
+    <b>Bermitra dengan lembaga pemerintah sebagai penyedia layanan pelatihan kartu prakerja untuk menciptakan angkatan
+        kerja Indonesia yang siap kerja.</b> -->
+<br />
+<br /><br />
+<form name="myForm" onsubmit="return validateForm()">
+    Name: <input type="text" name=" fname " />
+    <input type="submit" value="Submit" />
+</form>
+</body>
+
+</html>
